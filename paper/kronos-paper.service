@@ -1,0 +1,19 @@
+[Unit]
+Description=Kronos/LightGBM paper-trading logger (Polymarket 5-min markets)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=/home/hatch/workspace/kronos
+Environment=HF_HUB_DISABLE_XET=1
+Environment=HOME=/home/hatch
+Environment=HF_HUB_OFFLINE=1
+EnvironmentFile=/etc/kronos-paper.env
+Environment=no_proxy=localhost,127.0.0.1
+ExecStart=/home/hatch/workspace/venvs/kronos/bin/python -u /home/hatch/workspace/kronos/paper/paper_trader.py
+Restart=always
+RestartSec=15
+
+[Install]
+WantedBy=multi-user.target
