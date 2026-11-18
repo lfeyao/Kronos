@@ -74,3 +74,7 @@ venv.bak/
 temp/
 tmp/
 .python-version
+
+# Local 15-minute runner state
+trading/*.sqlite3*
+trading/reports/*.json

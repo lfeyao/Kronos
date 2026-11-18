@@ -1,0 +1,2 @@
+# Official Polymarket US SDK for this project's .venv.
+polymarket-us==2.4.1

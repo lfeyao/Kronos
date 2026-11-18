@@ -1,0 +1,49 @@
+{
+  "asof_utc": "2026-11-05T20:02:02Z",
+  "spot_fees": {
+    "maker_fee_rate": "0.005",
+    "pricing_tier": "Intro",
+    "taker_fee_rate": "0.009"
+  },
+  "future_fees": {
+    "maker_fee_rate": "0.00095",
+    "pricing_tier": "Intro",
+    "taker_fee_rate": "0.001"
+  },
+  "rows": [
+    {
+      "symbol": "BTC",
+      "spot_ask": 76128.26,
+      "perp_bid": 76150,
+      "dated_bid": 76510,
+      "size": 0.01,
+      "hourly_funding": 0.000018,
+      "constant_funding_20d_pct": 0.864,
+      "maker_roundtrip_pct": 1.1900000000000002,
+      "taker_roundtrip_pct": 1.9999999999999998,
+      "constant_net_20d_maker_pct": -0.32600000000000007,
+      "break_even_days_maker": 27.546296296296298,
+      "dated_entry_basis_pct": 0.5014432222672616,
+      "dated_gross_per_contract": 3.8174000000000525,
+      "spot_plus_short_margin_est": 955.23545,
+      "note": "Funding held constant scenario, not realized historical or forecast; excludes basis movement and additional charges."
+    },
+    {
+      "symbol": "ETH",
+      "spot_ask": 2254.43,
+      "perp_bid": 2255,
+      "dated_bid": 2261.5,
+      "size": 0.1,
+      "hourly_funding": 0.00001,
+      "constant_funding_20d_pct": 0.48000000000000004,
+      "maker_roundtrip_pct": 1.1900000000000002,
+      "taker_roundtrip_pct": 1.9999999999999998,
+      "constant_net_20d_maker_pct": -0.7100000000000001,
+      "break_even_days_maker": 49.58333333333333,
+      "dated_entry_basis_pct": 0.3136047692764876,
+      "dated_gross_per_contract": 0.7070000000000164,
+      "spot_plus_short_margin_est": 293.174925,
+      "note": "Funding held constant scenario, not realized historical or forecast; excludes basis movement and additional charges."
+    }
+  ]
+}

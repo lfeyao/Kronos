@@ -1,0 +1,27 @@
+# Guest-only policy. Preserves Lima's NAT/DNS tables.
+# Apply as one nft transaction; an empty endpoint set blocks VPN bootstrap until
+# a reviewed PIA server IP/UDP port is added. Do not flush the whole ruleset.
+add table inet kronos_egress
+flush table inet kronos_egress
+table inet kronos_egress {
+    set pia_endpoints {
+        type ipv4_addr . inet_service
+    }
+    chain output {
+        type filter hook output priority filter; policy drop;
+        oifname "lo" accept
+        # Replies on established inbound SSH connections keep Lima management alive.
+        tcp sport 22 ct state established accept
+        # DHCP is needed for the VM's private network lease.
+        meta nfproto ipv4 udp sport 68 udp dport 67 accept
+        # Kernel WireGuard packets carry the configured fwmark; kernel sockets
+        # do not reliably expose a userspace UID to nftables.
+        meta mark 51820 ip daddr . udp dport @pia_endpoints accept
+        # Application IPv4 traffic must traverse the WireGuard interface.
+        oifname "pia" meta nfproto ipv4 accept
+        counter drop
+    }
+    chain forward {
+        type filter hook forward priority filter; policy drop;
+    }
+}

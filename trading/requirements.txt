@@ -1,0 +1,2 @@
+# Optional Polymarket public market-data adapter; core paper runner is stdlib-only.
+polymarket-client

@@ -1,0 +1,14 @@
+{
+  "interval_seconds": 900,
+  "minimum_expected_roi": 0.5,
+  "stake_usd": 100,
+  "starting_balance_usd": 1000,
+  "venues": ["coinbase", "robinhood", "polymarket"],
+  "assets": ["BTC", "ETH"],
+  "max_signal_age_seconds": 90,
+  "max_quote_age_seconds": 10,
+  "require_regime_report": true,
+  "require_all_venue_checks": true,
+  "regime_report_max_age_hours": 26,
+  "model_version": "kronos-small:baseline"
+}

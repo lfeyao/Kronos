@@ -1,0 +1,385 @@
+{
+  "date": "2026-11-05",
+  "source": "Coinbase FUTURE daily candles",
+  "split": "first180 context/development; next60 validation; last60 holdout",
+  "trial_count": 24,
+  "cost_per_roundtrip": 0.0024,
+  "execution": "signal close; next day open entry and same-day close exit, hypothetical 1x notional",
+  "ranked_by_validation": [
+    {
+      "product": "XPP-20DEC30-CDE",
+      "strategy": "breakout20",
+      "validation": {
+        "return_pct": 28.63579926259201,
+        "max_dd_pct": 3.246110084799003,
+        "trades": 6
+      },
+      "holdout": {
+        "return_pct": -1.3429647495596164,
+        "max_dd_pct": 1.984138882128672,
+        "trades": 3
+      },
+      "holdout_double_cost_return_pct": -2.054907301814546
+    },
+    {
+      "product": "BCP-20DEC30-CDE",
+      "strategy": "breakout20",
+      "validation": {
+        "return_pct": 23.119303824664783,
+        "max_dd_pct": 4.004093668690379,
+        "trades": 2
+      },
+      "holdout": {
+        "return_pct": -4.7695468144109965,
+        "max_dd_pct": 4.7695468144109965,
+        "trades": 2
+      },
+      "holdout_double_cost_return_pct": -5.237385165124286
+    },
+    {
+      "product": "SLP-20DEC30-CDE",
+      "strategy": "trend5_20",
+      "validation": {
+        "return_pct": 14.490804223566855,
+        "max_dd_pct": 13.25821663198914,
+        "trades": 60
+      },
+      "holdout": {
+        "return_pct": -15.675303738347656,
+        "max_dd_pct": 24.500565162749023,
+        "trades": 60
+      },
+      "holdout_double_cost_return_pct": -27.031274152824036
+    },
+    {
+      "product": "SLP-20DEC30-CDE",
+      "strategy": "momentum5",
+      "validation": {
+        "return_pct": 13.887655204838456,
+        "max_dd_pct": 13.616575244812424,
+        "trades": 60
+      },
+      "holdout": {
+        "return_pct": -20.049785951907197,
+        "max_dd_pct": 28.09851590151624,
+        "trades": 60
+      },
+      "holdout_double_cost_return_pct": -30.825544614497215
+    },
+    {
+      "product": "LNP-20DEC30-CDE",
+      "strategy": "trend5_20",
+      "validation": {
+        "return_pct": 12.486206179918312,
+        "max_dd_pct": 19.092855654126662,
+        "trades": 60
+      },
+      "holdout": {
+        "return_pct": -22.12644359288317,
+        "max_dd_pct": 33.77062528679397,
+        "trades": 60
+      },
+      "holdout_double_cost_return_pct": -32.62993594450471
+    },
+    {
+      "product": "LCP-20DEC30-CDE",
+      "strategy": "breakout20",
+      "validation": {
+        "return_pct": 10.98867383988813,
+        "max_dd_pct": 1.295408970976264,
+        "trades": 4
+      },
+      "holdout": {
+        "return_pct": -0.4757931424644313,
+        "max_dd_pct": 2.3187746170678203,
+        "trades": 3
+      },
+      "holdout_double_cost_return_pct": -1.1918733237191503
+    },
+    {
+      "product": "BCP-20DEC30-CDE",
+      "strategy": "momentum5",
+      "validation": {
+        "return_pct": 6.784679526516446,
+        "max_dd_pct": 23.569106897682467,
+        "trades": 60
+      },
+      "holdout": {
+        "return_pct": -20.489740750526686,
+        "max_dd_pct": 36.85872633135331,
+        "trades": 60
+      },
+      "holdout_double_cost_return_pct": -31.214384552438148
+    },
+    {
+      "product": "AVP-20DEC30-CDE",
+      "strategy": "reversion20",
+      "validation": {
+        "return_pct": 2.752092993836208,
+        "max_dd_pct": 14.543601537474526,
+        "trades": 9
+      },
+      "holdout": {
+        "return_pct": -22.56885863638155,
+        "max_dd_pct": 32.93994827927066,
+        "trades": 18
+      },
+      "holdout_double_cost_return_pct": -25.901369736136648
+    },
+    {
+      "product": "SLP-20DEC30-CDE",
+      "strategy": "breakout20",
+      "validation": {
+        "return_pct": 1.1850517253405135,
+        "max_dd_pct": 4.989242053709486,
+        "trades": 5
+      },
+      "holdout": {
+        "return_pct": -5.37327479141153,
+        "max_dd_pct": 5.37327479141153,
+        "trades": 5
+      },
+      "holdout_double_cost_return_pct": -6.515859310357719
+    },
+    {
+      "product": "AVP-20DEC30-CDE",
+      "strategy": "breakout20",
+      "validation": {
+        "return_pct": 1.0950404834347172,
+        "max_dd_pct": 4.576734693877549,
+        "trades": 3
+      },
+      "holdout": {
+        "return_pct": 30.894694985198477,
+        "max_dd_pct": 4.476089259136828,
+        "trades": 5
+      },
+      "holdout_double_cost_return_pct": 29.407104928405037
+    },
+    {
+      "product": "LCP-20DEC30-CDE",
+      "strategy": "reversion20",
+      "validation": {
+        "return_pct": -4.4239891334368675,
+        "max_dd_pct": 13.018584433936853,
+        "trades": 12
+      },
+      "holdout": {
+        "return_pct": -18.393955930812535,
+        "max_dd_pct": 24.20838373110078,
+        "trades": 21
+      },
+      "holdout_double_cost_return_pct": -22.45169210807446
+    },
+    {
+      "product": "LNP-20DEC30-CDE",
+      "strategy": "breakout20",
+      "validation": {
+        "return_pct": -4.645879776159512,
+        "max_dd_pct": 8.434428802688787,
+        "trades": 8
+      },
+      "holdout": {
+        "return_pct": -17.06690425328282,
+        "max_dd_pct": 17.06690425328282,
+        "trades": 6
+      },
+      "holdout_double_cost_return_pct": -18.292113900040963
+    },
+    {
+      "product": "LCP-20DEC30-CDE",
+      "strategy": "trend5_20",
+      "validation": {
+        "return_pct": -8.225646168221324,
+        "max_dd_pct": 22.179211194914352,
+        "trades": 60
+      },
+      "holdout": {
+        "return_pct": 9.507540710436624,
+        "max_dd_pct": 17.714422307530832,
+        "trades": 60
+      },
+      "holdout_double_cost_return_pct": -5.181557824615412
+    },
+    {
+      "product": "XPP-20DEC30-CDE",
+      "strategy": "momentum5",
+      "validation": {
+        "return_pct": -10.035400716065679,
+        "max_dd_pct": 22.36703658234974,
+        "trades": 60
+      },
+      "holdout": {
+        "return_pct": -33.52914553654639,
+        "max_dd_pct": 38.04589232419906,
+        "trades": 60
+      },
+      "holdout_double_cost_return_pct": -42.514186357258154
+    },
+    {
+      "product": "LCP-20DEC30-CDE",
+      "strategy": "momentum5",
+      "validation": {
+        "return_pct": -10.073737504211133,
+        "max_dd_pct": 22.150070272218926,
+        "trades": 60
+      },
+      "holdout": {
+        "return_pct": -24.7727776248455,
+        "max_dd_pct": 31.685038412772283,
+        "trades": 60
+      },
+      "holdout_double_cost_return_pct": -34.92265071809912
+    },
+    {
+      "product": "LNP-20DEC30-CDE",
+      "strategy": "momentum5",
+      "validation": {
+        "return_pct": -10.294021906704131,
+        "max_dd_pct": 26.70062568120993,
+        "trades": 60
+      },
+      "holdout": {
+        "return_pct": -26.02903403054768,
+        "max_dd_pct": 36.557301838932624,
+        "trades": 59
+      },
+      "holdout_double_cost_return_pct": -35.860345716620714
+    },
+    {
+      "product": "LNP-20DEC30-CDE",
+      "strategy": "reversion20",
+      "validation": {
+        "return_pct": -20.946169420165983,
+        "max_dd_pct": 31.589603892522554,
+        "trades": 21
+      },
+      "holdout": {
+        "return_pct": 5.655840647856003,
+        "max_dd_pct": 16.417137019542405,
+        "trades": 16
+      },
+      "holdout_double_cost_return_pct": 1.6807820167432874
+    },
+    {
+      "product": "BCP-20DEC30-CDE",
+      "strategy": "reversion20",
+      "validation": {
+        "return_pct": -20.9685054053088,
+        "max_dd_pct": 28.734743905166617,
+        "trades": 15
+      },
+      "holdout": {
+        "return_pct": 8.555171407096452,
+        "max_dd_pct": 5.449283628086499,
+        "trades": 14
+      },
+      "holdout_double_cost_return_pct": 4.984102666020451
+    },
+    {
+      "product": "XPP-20DEC30-CDE",
+      "strategy": "reversion20",
+      "validation": {
+        "return_pct": -27.02000923018901,
+        "max_dd_pct": 31.484979172883055,
+        "trades": 14
+      },
+      "holdout": {
+        "return_pct": 8.597585071599688,
+        "max_dd_pct": 6.188653060102278,
+        "trades": 21
+      },
+      "holdout_double_cost_return_pct": 3.2727377692566506
+    },
+    {
+      "product": "SLP-20DEC30-CDE",
+      "strategy": "reversion20",
+      "validation": {
+        "return_pct": -30.747099891736685,
+        "max_dd_pct": 32.891055512314225,
+        "trades": 17
+      },
+      "holdout": {
+        "return_pct": -10.695995932863378,
+        "max_dd_pct": 15.942462755801657,
+        "trades": 23
+      },
+      "holdout_double_cost_return_pct": -15.521850532464265
+    },
+    {
+      "product": "AVP-20DEC30-CDE",
+      "strategy": "trend5_20",
+      "validation": {
+        "return_pct": -30.846433284926643,
+        "max_dd_pct": 34.391620403607526,
+        "trades": 60
+      },
+      "holdout": {
+        "return_pct": 7.383735115277945,
+        "max_dd_pct": 21.989279655957926,
+        "trades": 60
+      },
+      "holdout_double_cost_return_pct": -7.032394656551643
+    },
+    {
+      "product": "XPP-20DEC30-CDE",
+      "strategy": "trend5_20",
+      "validation": {
+        "return_pct": -31.854409199266986,
+        "max_dd_pct": 36.638172057446575,
+        "trades": 60
+      },
+      "holdout": {
+        "return_pct": -22.995043843519525,
+        "max_dd_pct": 27.93626677466412,
+        "trades": 60
+      },
+      "holdout_double_cost_return_pct": -33.380237761016055
+    },
+    {
+      "product": "AVP-20DEC30-CDE",
+      "strategy": "momentum5",
+      "validation": {
+        "return_pct": -41.93810975279124,
+        "max_dd_pct": 45.087106693970156,
+        "trades": 59
+      },
+      "holdout": {
+        "return_pct": 19.16164182395006,
+        "max_dd_pct": 26.939922070511436,
+        "trades": 60
+      },
+      "holdout_double_cost_return_pct": 3.1903966266540573
+    },
+    {
+      "product": "BCP-20DEC30-CDE",
+      "strategy": "trend5_20",
+      "validation": {
+        "return_pct": -53.80082029314305,
+        "max_dd_pct": 56.891058986947165,
+        "trades": 60
+      },
+      "holdout": {
+        "return_pct": -8.671118793900733,
+        "max_dd_pct": 32.062011343368866,
+        "trades": 60
+      },
+      "holdout_double_cost_return_pct": -20.963485509842094
+    }
+  ],
+  "selected": {
+    "product": "XPP-20DEC30-CDE",
+    "strategy": "breakout20",
+    "validation": {
+      "return_pct": 28.63579926259201,
+      "max_dd_pct": 3.246110084799003,
+      "trades": 6
+    },
+    "holdout": {
+      "return_pct": -1.3429647495596164,
+      "max_dd_pct": 1.984138882128672,
+      "trades": 3
+    },
+    "holdout_double_cost_return_pct": -2.054907301814546
+  }
+}

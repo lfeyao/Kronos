@@ -1,0 +1,20 @@
+{
+  "execution_mode": "paper",
+  "strategy": "coinbase_spot_15m",
+  "venue": "coinbase",
+  "assets": ["BTC", "ETH"],
+  "interval_seconds": 900,
+  "stake_usd": 100,
+  "starting_balance_usd": 1000,
+  "minimum_expected_net_return": 0,
+  "buy_fee_rate": 0.009,
+  "sell_fee_rate": 0.009,
+  "entry_slippage_bps": 5,
+  "exit_slippage_bps": 5,
+  "expected_exit_half_spread_bps": 1,
+  "cost_assumption_source": "Coinbase SPOT fee tool 2026-10-24: taker 0.009 each side. Paper assumptions: 5 bps extra slippage per side and 1 bp terminal half-spread; not validated execution estimates.",
+  "max_signal_age_seconds": 90,
+  "max_quote_age_seconds": 10,
+  "regime_report_max_age_hours": 26,
+  "model_version": "kronos-small:baseline"
+}

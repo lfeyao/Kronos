@@ -335,3 +335,7 @@ This project is licensed under the [MIT License](./LICENSE).
 
 
 
+
+## Trading research
+
+[Trading research and team notes](research/README.md) contains experiment reports, strategy screens, supporting data and reproducible research scripts.
