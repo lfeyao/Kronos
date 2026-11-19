@@ -2,6 +2,8 @@
 
 This directory is the shared repository location for trading research, experiment notes, methodology, data snapshots and reproducible analysis scripts. Add future research here and update this index. Do not rely on chat history or an external Codex workspace as the only record.
 
+**Current recommendation:** [BTC trend-following strategy decision — November 19, 2026](STRATEGY_DECISION.md). Frozen signal specification, evidence, sizing proposal and validation gates; paper evaluation recommended, live allocation zero.
+
 ## Coinbase competition
 
 The [competition research folder](coinbase-competition/) contains the November 2026 research migrated into this repo on November 18, 2026:
@@ -26,6 +28,9 @@ python3 research/coinbase-competition/refine_xrp_strategy.py
 The script uses the Python standard library and writes results beside itself. No GPU is needed for that rule-based calculation. This does not retrain Kronos model weights.
 
 ## Existing implementation and operational documentation
+
+- [Hyperliquid vault strategies: source review and test plan](vault-strategies.md) — Astraeus trend/volume/variance sizing and 0xArchive averaging-down strategy; reviewed November 18, 2026. Initial hypotheses and source caveats; replay linked below.
+- [Coinbase competition replay of both vault strategies](vault-competition-report.md) — November 18, 2026 run; futures data, source-inspired rules, benchmark, fee/funding sensitivity, intrabar-path scenarios and tail stress. Retrospective paper research only.
 
 - [Trading implementation and overview](../trading/README.md)
 - [Trading status](../trading/TRADING_STATUS.md)
